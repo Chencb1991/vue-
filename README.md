@@ -2,6 +2,11 @@
 
 #### 输入框输入暂停请求
 ```
+ @keyup.native="onkeyup($event)" 
+
+lastTimeStamp: 0,//标记当前事件函数的时间戳
+
+
 onkeyup(event){
             if(event.keyCode != 13){//除回车键外
                 //标记当前事件函数的时间戳
