@@ -249,3 +249,26 @@ axios.interceptors.response.use(
  
  ```
  
+
+```
+inits(){
+      this.$axios.get('/api', {
+　　    params: { type: 'QHCC',
+          sty: 'QHSYCC',
+          stat: '3',
+          fd: '2019-04-22',
+          mkt: '069001008',
+          code: 'ma1909',
+          sc: 'MA'}
+        })
+      .then(function (response) {
+         console.log(response.data.slice(1).substring(0,response.data.length-2));
+         let datass = response.data.slice(1).substring(0,response.data.length-2);
+         console.log(JSON.parse(datass))
+
+      })
+      .catch(function (error) {
+      console.log(error);
+      });
+    },
+    ```
