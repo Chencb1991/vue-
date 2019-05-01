@@ -207,6 +207,7 @@ onkeyup(event){
  ```
  
 #### axios设置请求超时
+
 ```
 import axios from 'axios'
 axios.defaults.timeout = 6000
@@ -247,10 +248,7 @@ axios.interceptors.response.use(
  
  Vue.prototype.$axios = axios
  
- ```
- 
 
-```
 inits(){
       this.$axios.get('/api', {
 　　    params: { type: 'QHCC',
@@ -271,9 +269,7 @@ inits(){
       console.log(error);
       });
     },
-    ```
-    
-    ```
+   
     init(){
       this.$axios.get('/api', {
 　　    params: { type: 'QHCC',
@@ -342,13 +338,15 @@ inits(){
       console.log(error);
       });
       },
-     ```
+    
+      ```
      
+ 
+ 
+ 
+####  监听路由动态变化，改变浏览器倒退tab值变化  
      
-     
-    #### 监听路由动态变化，改变浏览器倒退tab值变化  
-     
-     ```
+   ```
    
   watch: {
     $route: {
@@ -371,6 +369,7 @@ inits(){
       deep: true
     }
   }
+  
   ```
   
   
