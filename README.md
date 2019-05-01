@@ -248,7 +248,8 @@ axios.interceptors.response.use(
  
  Vue.prototype.$axios = axios
  
-
+```
+```
 inits(){
       this.$axios.get('/api', {
 　　    params: { type: 'QHCC',
@@ -339,7 +340,7 @@ inits(){
       });
       },
     
-      ```
+ ```
      
  
  
@@ -418,12 +419,12 @@ proxyTable: {
                 }
         }
     },
-    ```
+ ```
     
     
-    #### vue创建自定义组件
+#### vue创建自定义组件
     
-    ```
+ ```
  1.组件目录创建loadin文件夹，文件夹内创建Loading.vue(略)和index.js
 index.js安装组件导出组件：
 
